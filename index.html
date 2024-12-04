@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Welcome to the library!</h1>
+        <table style="width:100%" id="table">
+          <thead>
+            <tr class="table-row">
+              <th>Title</th>
+              <th>Author</th>
+              <th>Pages</th>
+              <th>Read?</th>
+              <th><button onclick="showForm()">Add</button></th>
+            </tr>
+          </thead>
+            <tbody id="tbody"></tbody>
+          </tbody>
+          </table>
+
+
+          <div id="formView" style="display: none">
+            <form action="" id="bookForm">
+              <label for="title"> Title</label>
+              <input type="text" name="title" id="title"/>
+
+              <label for="author"> Author</label>
+              <input type="text" name="author" id="author"/>
+
+              <label for="numOfPages"> Number of Pages</label>
+              <input type="number" name="numOfPages" id="numOfPages"/>
+
+              <label for="read">Already Read</label><br>
+              <input type="radio" id="read" name="read" value="HTML">
+    
+              <button type="submit">Add Book</button>
+            </form>
+
+          </div>
+</body>
+<script src="library.js"></script>
+</html>
+
+ <!-- <tr>
+              <td>Alfreds Futterkiste</td>
+              <td>Maria Anders</td>
+              <td>Germany</td>
+            </tr> -->
